@@ -23,7 +23,7 @@ Antes de evaluar los modelos, definimos los principales KPI’s (Key Performance
 ## Resultados
 Los resultados que se obtuvieron fue pasar de un modelo poco útil a un modelo posiblemente útil ya que se optimizó la sensibil idad y pudimos extremar la tasa de verdaderos positivos o Rcall.
 
-
+IMAGEN DE LA CURVA ROC
 
 ## Lecciones aprendidas
 - Manejo de desbalance de clases
