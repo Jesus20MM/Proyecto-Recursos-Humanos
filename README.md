@@ -8,7 +8,7 @@ Para resolver el problema, se aplicaron tres modelos de machine learning: regres
 ## Dataset
 El dataset tiene un conjunto de 35 variables, donde 34 de ellas son independientes y una dependiente. La dimensión del dataset es (1470, 35). Todas las características son información de los empleados como edad, departamento, educación, etc. y nuestra variable objetivo es attrition (se marcha o no se marcha).
 
-## Metodología (meter imágenes si es necesario)
+## Metodología 
 Describe los pasos principales del análisis o modelo, por ejemplo:
 1.	Análisis exploratorio de datos (EDA)
 En esta etapa conocimos en profundidad el dataset y planteamos preguntas clave orientadas al análisis, una vez definido el objetivo general del proyecto. La importancia de explorar exhaustivamente el dataset radica en comprender qué tipo de transformaciones o procesos de limpieza son necesarios para alcanzar nuestros fines. En este caso, el objetivo principal era obtener un conjunto de datos limpio y procesado para la implementación de modelos de clasificación, ya que buscábamos entender la deserción de empleados en términos de probabilidad. Esta fase nos permitió identificar patrones, valores atípicos y relaciones relevantes entre variables. El propósito del EDA es dejar completamente claros los pasos necesarios para transformar el dataset original en uno preparado para el análisis predictivo.
@@ -19,8 +19,11 @@ Con los datos ya procesados, realizamos pequeños ajustes adicionales antes de a
 4.	Evaluación del modelo
 Antes de evaluar los modelos, definimos los principales KPI’s (Key Performance Indicators) según las necesidades del problema. Utilizamos la matriz de confusión para analizar métricas como precisión, recall, F1-score, y ajustamos el umbral de decisión mediante la curva ROC (Receiver Operating Characteristic) y el área bajo la curva (AUC). Comparando el rendimiento entre modelos sin procesar y modelos optimizados, concluimos que la regresión logística sobre los datos procesados fue el modelo óptimo, a pesar de haber explorado alternativas más complejas como una red neuronal profunda. Esta elección se basó en un equilibrio entre rendimiento, interpretabilidad y facilidad de implementación.
 
+
 ## Resultados
-Modelo útil para decisiones médicas preventivas. Buen recall. Umbral optimizado. 
+Los resultados que se obtuvieron fue pasar de un modelo poco útil a un modelo posiblemente útil ya que se optimizó la sensibil idad y pudimos extremar la tasa de verdaderos positivos o Rcall.
+
+
 
 ## Lecciones aprendidas
 - Manejo de desbalance de clases
