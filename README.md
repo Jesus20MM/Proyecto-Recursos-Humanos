@@ -1,8 +1,5 @@
-# Predicción de Rotación de Personal con Modelos de Clasificación
-
 ## Descripción
 Este proyecto aborda el problema de por qué los empleados abandonan la empresa. El objetivo es predecir la probabilidad de que un empleado renuncie, utilizando Python como herramienta principal.
-
 Para resolver el problema, se aplicaron tres modelos de machine learning: regresión logística, bosques aleatorios y una red neuronal artificial. Se dio especial énfasis a la regresión logística, seleccionando el mejor umbral a analizando de la curva ROC mediante el análisis de la tasa de verdaderos positivos y falsos positivos para cada umbral. También se realizó un análisis detallado de la matriz de confusión. Además, se generaron visualizaciones complementarias para extraer información adicional de los datos.
 
 ## Dataset
@@ -19,11 +16,14 @@ Con los datos ya procesados, realizamos pequeños ajustes adicionales antes de a
 4.	Evaluación del modelo
 Antes de evaluar los modelos, definimos los principales KPI’s (Key Performance Indicators) según las necesidades del problema. Utilizamos la matriz de confusión para analizar métricas como precisión, recall, F1-score, y ajustamos el umbral de decisión mediante la curva ROC (Receiver Operating Characteristic) y el área bajo la curva (AUC). Comparando el rendimiento entre modelos sin procesar y modelos optimizados, concluimos que la regresión logística sobre los datos procesados fue el modelo óptimo, a pesar de haber explorado alternativas más complejas como una red neuronal profunda. Esta elección se basó en un equilibrio entre rendimiento, interpretabilidad y facilidad de implementación.
 
-
 ## Resultados
-Los resultados que se obtuvieron fue pasar de un modelo poco útil a un modelo posiblemente útil ya que se optimizó la sensibil idad y pudimos extremar la tasa de verdaderos positivos o Rcall.
+Los resultados que se obtuvieron fue pasar de un modelo poco útil a un modelo posiblemente útil ya que se optimizó la sensibilidad y pudimos extremar la tasa de verdaderos positivos o Rcall.
 
-IMAGEN DE LA CURVA ROC
+Aquí se muestran los diferentes umbrales para la regresión logística:
+
+![image](https://github.com/user-attachments/assets/9ac5bd42-23b9-4225-887b-4bd77a7fabf2)
+
+
 
 ## Lecciones aprendidas
 - Manejo de desbalance de clases
@@ -35,4 +35,4 @@ IMAGEN DE LA CURVA ROC
 ## Tecnologías
 Pandas, Scikit-Learn, redes neuronales y tensorflow, visualizaciones, Numpy, matplotlib, seaborn, clasificación.
 ## Mejoras futuras
-Comparar los resultados de los modelos en conjunto, métodos de evaluacion más robusto como validación cruzada, profundizar en la optimizacion de los modelos con sus parámetros e hiperparámetros, implementar el descenso del gradiente con la funcion de costes simplificada para la regresión, implementar XGBoost.
+Comparar los resultados de los modelos en conjunto, métodos de evaluacion más robusto como validación cruzada, profundizar en la optimizacion de los modelos con sus parámetros e hiperparámetros, implementar el descenso del gradiente con la funcion de costes simplificada para la regresión, implementar XGBoost
